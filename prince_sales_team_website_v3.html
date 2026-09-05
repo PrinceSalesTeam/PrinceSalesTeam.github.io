@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prince Sales Team | Recruitment & Partner Hub</title>
+<meta name="description" content="Prince Sales Team recruitment, field sales opportunity, partner earning calculator and daily performance tracker.">
+<style>
+:root{--blue:#1a73e8;--blue2:#0b57d0;--dark:#10213f;--ink:#172033;--muted:#667085;--bg:#f5f8fc;--card:#fff;--line:#e4e9f1;--green:#188038}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:13px 18px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;font-size:19px}.brand span{color:var(--blue)}
+nav a{margin-left:17px;text-decoration:none;color:#27364f;font-weight:800;font-size:14px}
+.hero{padding:78px 18px 70px;background:linear-gradient(135deg,#e8f0fe,#fff 52%,#eef7ff)}
+.wrap{max-width:1180px;margin:auto}.badge{display:inline-block;padding:7px 12px;border-radius:30px;background:#fff;border:1px solid #d5e3fb;color:var(--blue2);font-weight:900;font-size:12px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;max-width:900px;margin:18px 0}.hero h1 span{color:var(--blue)}.lead{font-size:19px;color:#56627a;max-width:780px}
+.btn{display:inline-block;text-decoration:none;padding:13px 19px;border-radius:11px;font-weight:900;margin:6px 5px 0 0;border:0;cursor:pointer}.primary{background:var(--blue);color:#fff}.white{background:#fff;color:var(--blue2);border:1px solid #d7e1f0}.green{background:var(--green);color:#fff}
+section{padding:60px 18px}.section-head{text-align:center;margin-bottom:30px}.section-head h2{font-size:32px;margin:0 0 6px}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);padding:24px;border-radius:17px;border:1px solid var(--line);box-shadow:0 7px 25px #10213f0b}.icon{font-size:30px}.card h3{margin:9px 0}.card p{color:#626d80;margin:0}
+.dark{background:var(--dark);color:#fff}.dark .section-head p{color:#cbd5e5}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{padding:21px;text-align:center;background:#ffffff10;border:1px solid #ffffff1c;border-radius:14px}.stat strong{display:block;font-size:28px;margin-bottom:3px}
+.pills{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}.pill{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:30px;font-weight:800;color:#344054}
+.calculator{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 7px 25px #10213f0b}
+.rate-row{display:grid;grid-template-columns:1fr 95px 95px;gap:9px;align-items:center;margin:9px 0}.rate-row input{padding:9px}.rate-name{font-weight:800}.rate{font-size:13px;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd4e2;border-radius:9px;font:inherit;background:#fff}label{display:block;font-weight:800;margin:12px 0 6px}
+.total{font-size:39px;font-weight:950;color:var(--blue);margin:5px 0}.small{font-size:13px;color:var(--muted)}.result-box{padding:18px;background:#f3f7fd;border-radius:14px;margin-top:12px}.result-line{display:flex;justify-content:space-between;border-bottom:1px solid #dfe6f0;padding:8px 0}.result-line:last-child{border:0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#fff;border-radius:15px;padding:21px;border:1px solid var(--line)}.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e8f0fe;color:var(--blue2);font-weight:900}
+.formbox{max-width:760px;margin:auto;background:#fff;padding:26px;border-radius:18px;border:1px solid var(--line);box-shadow:0 8px 28px #10213f0c}.notice{margin-top:15px;padding:12px;border-radius:9px;background:#f1f5fb;color:#58657a;font-size:13px}
+footer{background:#0c1729;color:#cbd4e4;padding:32px 18px;text-align:center;font-size:13px}footer strong{color:#fff}.float{position:fixed;right:16px;bottom:16px;z-index:60}.float a{box-shadow:0 8px 22px #0003}
+@media(max-width:850px){nav{display:none}.grid,.stats,.steps,.calculator{grid-template-columns:1fr 1fr}.rate-row{grid-template-columns:1fr 85px 85px}}
+@media(max-width:560px){.grid,.stats,.steps,.calculator{grid-template-columns:1fr}.hero{padding:55px 18px}.btn{width:100%;text-align:center}.rate-row{grid-template-columns:1fr 70px 80px}.rate-row .rate{font-size:11px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="brand">Prince <span>Sales Team</span></div>
+<nav><a href="#jobs">Jobs</a><a href="#earn">Earning</a><a href="#tracker">Tracker</a><a href="#apply">Apply</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<span class="badge">🚀 RECRUITMENT • FIELD SALES • TEAM GROWTH</span>
+<h1>Build Your Career With <span>Prince Sales Team</span></h1>
+<p class="lead">Field-sales and merchant-support opportunities for people who want to learn, perform and grow. Join the team, follow quality processes and build consistent results.</p>
+<a class="btn primary" href="https://wa.me/919528639486?text=Hello%2C%20I%20want%20to%20apply%20for%20the%20field%20sales%20opportunity.%20Name%3A%20%20City%3A%20" target="_blank">📲 Apply on WhatsApp</a>
+<a class="btn white" href="#apply">📝 Apply Online</a>
+</div></section>
+
+<section id="jobs"><div class="wrap">
+<div class="section-head"><h2>Open Opportunities</h2><p>Current project allocation, eligibility and terms can change.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">👨‍💼</div><h3>Sales Partner / Field Executive</h3><p>Shop-to-shop visits, merchant interaction, assigned onboarding/support work and daily reporting.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Performance & Incentives</h3><p>Eligible project activities can earn incentives according to the current applicable rate card and quality rules.</p></div>
+<div class="card"><div class="icon">👑</div><h3>Team Leader Growth</h3><p>Build and coach a team, monitor performance, improve field execution and manage reporting.</p></div>
+</div></div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><h2>Opportunity Snapshot</h2><p>Recruitment details provided for this team.</p></div>
+<div class="stats">
+<div class="stat"><strong>₹15K–₹35K</strong>CTC range*</div>
+<div class="stat"><strong>+ Incentives</strong>Project-linked*</div>
+<div class="stat"><strong>10th+</strong>Qualification*</div>
+<div class="stat"><strong>Bike + Phone</strong>Required*</div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="section-head"><h2>Hiring Locations</h2><p>Availability depends on current vacancies and project demand.</p></div>
+<div class="pills">
+<span class="pill">Moradabad</span><span class="pill">Chandosi</span><span class="pill">PakWada</span><span class="pill">Amroha</span><span class="pill">Sambhal</span><span class="pill">Rampur</span><span class="pill">Kashipur</span><span class="pill">Nearby Areas</span><span class="pill">All India*</span>
+</div></div></section>
+
+<section id="earn"><div class="wrap">
+<div class="section-head"><h2>💰 Partner Earning Calculator</h2><p>Illustrative calculator using the current rates you provided. It is not a salary guarantee.</p></div>
+<div class="calculator">
+<div class="panel">
+<div id="rates"></div>
+<button class="btn primary" onclick="resetCounts()">Reset Counts</button>
+<button class="btn white" onclick="shareEarning()">📲 Share Estimate</button>
+</div>
+<div class="panel">
+<div class="small">Estimated eligible incentive</div>
+<div class="total" id="grandTotal">₹0</div>
+<div class="result-box">
+<div class="result-line"><span>Total activities</span><strong id="totalActs">0</strong></div>
+<div class="result-line"><span>Average per activity</span><strong id="avgRate">₹0</strong></div>
+<div class="result-line"><span>2-transaction rule</span><strong>Follow current project rule*</strong></div>
+</div>
+<p class="small">Rates shown here are the rates supplied by the Team Leader for this page. Actual eligibility depends on current project rules, verification, quality and approval.</p>
+</div>
+</div></div></section>
+
+<section id="tracker" class="dark"><div class="wrap">
+<div class="section-head"><h2>📊 Daily Target Tracker</h2><p>Simple browser-based tracker for your team. Data stays on this device.</p></div>
+<div class="calculator">
+<div class="panel">
+<label>Partner / Team Member Name</label><input id="member" placeholder="Enter name">
+<label>Today's Target</label><input id="target" type="number" min="0" value="10" oninput="updateTracker()">
+<label>Completed Eligible Activities</label><input id="done" type="number" min="0" value="0" oninput="updateTracker()">
+<label>Revisits Completed</label><input id="revisit" type="number" min="0" value="0" oninput="updateTracker()">
+<label>SoundPod Completed</label><input id="soundpod" type="number" min="0" value="0" oninput="updateTracker()">
+<button class="btn primary" onclick="shareTracker()">📲 Share Daily Report</button>
+</div>
+<div class="panel">
+<div class="small">Target achievement</div>
+<div class="total" id="percent">0%</div>
+<div class="result-box">
+<div class="result-line"><span>Target</span><strong id="showTarget">10</strong></div>
+<div class="result-line"><span>Completed</span><strong id="showDone">0</strong></div>
+<div class="result-line"><span>Revisits</span><strong id="showRevisit">0</strong></div>
+<div class="result-line"><span>SoundPod</span><strong id="showSoundpod">0</strong></div>
+</div>
+</div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="section-head"><h2>What You Will Do</h2><p>Quality-first field execution</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🏪</div><h3>Merchant Visits</h3><p>Visit assigned shops and communicate professionally with merchants.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Assigned Activities</h3><p>Complete applicable merchant onboarding, support, revisit or other assigned activities.</p></div>
+<div class="card"><div class="icon">🔁</div><h3>Follow-up</h3><p>Complete eligible revisit and follow-up activities according to current process.</p></div>
+<div class="card"><div class="icon">✅</div><h3>Quality</h3><p>Use genuine merchant details and maintain accurate, eligible work records.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Reporting</h3><p>Share morning, progress and end-of-day updates with the team.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Compliance</h3><p>Follow current company, project and customer-data requirements.</p></div>
+</div></div></section>
+
+<section id="process"><div class="wrap">
+<div class="section-head"><h2>How to Join</h2><p>Simple recruitment flow</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Apply</h3><p>Send your name, mobile number and city.</p></div>
+<div class="step"><div class="num">2</div><h3>Screening</h3><p>Discuss eligibility, vacancy and work expectations.</p></div>
+<div class="step"><div class="num">3</div><h3>Verification</h3><p>Complete the applicable recruitment/project verification.</p></div>
+<div class="step"><div class="num">4</div><h3>Training & Field</h3><p>After applicable onboarding, start assigned work.</p></div>
+</div></div></section>
+
+<section id="apply"><div class="wrap">
+<div class="section-head"><h2>📝 Apply Now</h2><p>Your application opens WhatsApp with the details you enter.</p></div>
+<div class="formbox">
+<form onsubmit="sendWhatsApp(event)">
+<label>Full Name</label><input id="name" required placeholder="Enter your name">
+<label>Mobile Number</label><input id="phone" required inputmode="numeric" placeholder="Enter mobile number">
+<label>City</label><input id="city" required placeholder="Your city">
+<label>Qualification</label><select id="qual" required><option value="">Select</option><option>10th Pass</option><option>12th Pass</option><option>Graduate</option><option>Other</option></select>
+<label>Have Bike & Smartphone?</label><select id="vehicle" required><option value="">Select</option><option>Yes</option><option>No</option></select>
+<label>Message (optional)</label><textarea id="msg" placeholder="Preferred location / availability"></textarea>
+<button class="btn primary submit" type="submit">📲 Send Application on WhatsApp</button>
+</form>
+<div class="notice">Please share sensitive documents only through the official recruitment process when requested. Employment, salary and incentive eligibility are subject to current terms and verification.</div>
+</div></div></section>
+
+<section><div class="wrap" style="text-align:center">
+<h2>Ready to Grow? 🚀</h2>
+<p>Recruitment enquiries and team joining support:</p>
+<a class="btn green" href="https://wa.me/919528639486" target="_blank">WhatsApp: 9528639486</a>
+<a class="btn white" href="tel:+919528639486">📞 Call Now</a>
+</div></section>
+
+<footer><strong>Prince Sales Team | Google Pay Business Project – NetAmbit</strong>
+<p>*Salary, incentives, eligibility, locations, documents, work allocation and payout rules are subject to current project/company terms, verification, quality and performance. The earning calculator is illustrative and does not guarantee earnings. “Google Pay” is used to describe the project opportunity; this page is not an official Google website unless authorized.</p>
+</footer>
+
+<div class="float"><a class="btn green" href="https://wa.me/919528639486" target="_blank">💬 WhatsApp</a></div>
+
+<script>
+const rates=[
+["SoundPod",140],["KYC-MID",60],["KYC-LOW",60],["KYC-HIGH",120],["Verify-KYC",60],
+["HIPO-inactive",120],["SP-inactive",120],["SP-Renew",180],["Inactive",120],
+["HIPO-active",60],["SP-churn",60],["Active",60],["Stuck-settlements",60]
+];
+function buildRates(){
+ const box=document.getElementById('rates');
+ box.innerHTML='<h3>Current Activity Rates</h3>'+rates.map((r,i)=>`
+ <div class="rate-row">
+   <div><div class="rate-name">${r[0]}</div><div class="rate">₹${r[1]} per eligible activity</div></div>
+   <input id="cnt${i}" type="number" min="0" value="0" oninput="calcEarning()">
+   <div style="font-weight:900;text-align:right">₹${r[1]}</div>
+ </div>`).join('');
+}
+function calcEarning(){
+ let total=0,acts=0;
+ rates.forEach((r,i)=>{const n=Number(document.getElementById('cnt'+i).value)||0; total+=n*r[1]; acts+=n;});
+ document.getElementById('grandTotal').textContent='₹'+total.toLocaleString('en-IN');
+ document.getElementById('totalActs').textContent=acts;
+ document.getElementById('avgRate').textContent='₹'+(acts?Math.round(total/acts):0);
+}
+function resetCounts(){rates.forEach((r,i)=>document.getElementById('cnt'+i).value=0);calcEarning();}
+function shareEarning(){
+ let total=document.getElementById('grandTotal').textContent, acts=document.getElementById('totalActs').textContent;
+ const text=`Prince Sales Team - Earning Estimate%0A%0AEligible activities: ${acts}%0AIllustrative incentive estimate: ${encodeURIComponent(total)}%0A%0A*Subject to current project rules, verification and approval.`;
+ window.open('https://wa.me/?text='+text,'_blank');
+}
+function updateTracker(){
+ const t=Number(document.getElementById('target').value)||0,d=Number(document.getElementById('done').value)||0;
+ document.getElementById('showTarget').textContent=t;document.getElementById('showDone').textContent=d;
+ document.getElementById('showRevisit').textContent=Number(document.getElementById('revisit').value)||0;
+ document.getElementById('showSoundpod').textContent=Number(document.getElementById('soundpod').value)||0;
+ document.getElementById('percent').textContent=(t?Math.min(100,Math.round(d/t*100)):0)+'%';
+}
+function shareTracker(){
+ const n=document.getElementById('member').value.trim()||'Team Member';
+ const t=document.getElementById('showTarget').textContent,d=document.getElementById('showDone').textContent;
+ const r=document.getElementById('showRevisit').textContent,s=document.getElementById('showSoundpod').textContent,p=document.getElementById('percent').textContent;
+ const text=`Daily Team Report - Prince Sales Team%0A%0APartner: ${encodeURIComponent(n)}%0ATarget: ${t}%0ACompleted: ${d}%0ATarget Achievement: ${p}%0ARevisit: ${r}%0ASoundPod: ${s}%0A%0AQuality work + correct reporting.`;
+ window.open('https://wa.me/?text='+text,'_blank');
+}
+function sendWhatsApp(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim();
+ const c=document.getElementById('city').value.trim(),q=document.getElementById('qual').value;
+ const v=document.getElementById('vehicle').value,m=document.getElementById('msg').value.trim();
+ const text=`New Job Application - Prince Sales Team%0A%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(p)}%0ACity: ${encodeURIComponent(c)}%0AQualification: ${encodeURIComponent(q)}%0ABike & Smartphone: ${encodeURIComponent(v)}%0AMessage: ${encodeURIComponent(m)}`;
+ window.open('https://wa.me/919528639486?text='+text,'_blank');
+}
+buildRates();calcEarning();updateTracker();
+</script>
+</body>
+</html>
